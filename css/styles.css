@@ -689,7 +689,7 @@ button {
   left: 0;
   padding: 63px 24px;
   /* width: 100%; */
-  height: 100%;
+  /* height: 100%; */
   background-color: rgba(33, 150, 243, 0.9);
   font-family: Roboto;
   font-style: normal;
@@ -706,7 +706,6 @@ button {
 .example-item:hover .example-text,
 .example-item:focus .example-text {
   transform: translateY(0%);
-  transition: transform 250ms ease;
 }
 
 .example-container {
