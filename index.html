@@ -16,7 +16,7 @@
         <nav class=" header-navigation">
             <a href="./index.html" class="header-logo"> <span class="web"> Web</span>Studio</a>        
                 <ul class="header-list list">
-                    <li class="header-item"><a href="./index.html" class="header-link link">Студия</a></li>
+                    <li class="header-item"><a href="./index.html" class="header-link link current">Студия</a></li>
                     <li class="header-item"><a href="./portfolio.html" class="header-link link">Портфолио</a></li>
                     <li class="header-item"><a href="" class="header-link link">Контакты</a></li>
                 </ul>
@@ -44,7 +44,7 @@
     <div class="container">
 
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-        <button class="hero-button btn"   type="button">Заказать услугу</button>
+        <button class="hero-button btn" type="button" data-modal-open>Заказать услугу</button>
     </div>
 </section>
 <!-- особенности -->
@@ -76,14 +76,23 @@
         <div class="container">         
             <h2 class="section-title">Чем мы занимаемся</h2>
                 <ul class="duty-list list">
-                    <li class="item">
+                    <li class="duty-item item">
                         <img src="./img/box1.jpg" alt="программирует" width="370">
+                        <div class="duty-label">
+                            <p class="duty-text">Десктопные приложения</p>
+                        </div>
                     </li>
-                    <li class="item">
+                    <li class="duty-item item">
                         <img src="./img/box2.jpg" alt="выбирает дизайн" width="370">
+                        <div class="duty-label">
+                            <p class="duty-text">Мобильные приложения</p>
+                        </div>
                     </li>
-                    <li class="item">  
+                    <li class="duty-item item">  
                         <img src="./img/box3.jpg" alt="выбирает цвет дизайна" width="370">
+                        <div class="duty-label">
+                            <p class="duty-text">Дизайнерские решения</p>
+                        </div>
                     </li>
                 </ul>
         </div>
@@ -346,5 +355,15 @@
             </div>
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="modal-close-btn" type="button" data-modal-close>
+                <svg class="close-icon-svg">
+                    <use href="./svgimg/sprite.svg#icon-Vector"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+<script src="./modal.js"></script>
 </body>
 </html>
